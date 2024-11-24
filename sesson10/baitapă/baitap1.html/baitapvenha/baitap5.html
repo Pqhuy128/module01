@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let arrayString =["element1","element2","element3","element4","element5","element6","element7"];
+        let stringIn = prompt("Please enter any string");
+        function filterString(array,string){
+        let result =[];
+        for(let value of array){
+            if(value.includes(string)){
+                result.push(value);
+            }
+        }
+        return result;
+    }
+        if(filterString(arrayString,stringIn).length>0  ){
+            console.log('phan tu co chua\"$(stringIn\ " la:\n${filterString,stringIn).join（"/n"}');
+            
+        }else{
+            console.log("khong co phan tu nao trong mang chua ",stringIn);
+            
+        }
+    </script>
+</body>
+</html>

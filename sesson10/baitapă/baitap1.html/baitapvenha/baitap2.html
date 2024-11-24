@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = ["car", "bike", "motor", "circle"]
+        function findLongestElement(array) {
+            let index = 0;
+            let lenghtMax = array[0].length;
+            for (let i = 1; i < array.length; i++) {
+                if (array[i].length > lenghtMax) {
+                    lenghtMax = array[i].length;
+                    index = i;
+                }
+            }
+            return index
+        }
+        let index = findLongestElement(array);
+        console.log("phan tu lon nhat la", array[index]);
+
+    </script>
+</body>
+
+</html>

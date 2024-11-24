@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string = "any elemnent"
+        function captalizeFirstLetter(string) {
+            let flag = false;
+            let result = '';
+            for (let i = 0; i < string.length; i++) {
+                if (i == 0) {
+                    result += string[0].toUpperCase();
+                } else if (string[1] == " " && flag == true) {
+                    result += string[i].toUpperCase();
+                    flag = false;
+                } else {
+                    result += string[i];
+                }
+            }
+            return result
+        }
+        console.log(captalizeFirstLetter(string));
+
+    </script>
+</body>
+
+</html>
